@@ -1,0 +1,117 @@
+body{
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+}
+
+header, footer{
+    background-color: rgb(26, 26, 99);
+    text-align: center;
+    color:aliceblue;
+    padding: 10px;
+}
+footer{
+    font-size: 12px;
+}
+
+
+
+nav{
+    margin-top:10px;
+    text-align: right;
+}
+nav > ul{
+    margin:0;
+    padding: 0;
+    padding: 10px;
+    
+}
+nav > ul > li{
+    display: inline;
+    background-color: rgb(21, 94, 158);
+    padding: 10px;
+    border-radius: 50px; 
+}
+nav > ul > li:hover{
+    border-radius: 20px 0px; 
+    background-color: rgb(12, 66, 113);
+}
+
+nav > ul > li > a{
+    color:aliceblue; 
+    text-decoration: none;
+}
+
+nav > ul > li.active{
+    border-radius: 20px 0px; 
+    background-color: red
+}
+
+.active{
+    background-color: green
+}
+
+a:visited{
+    color: red;
+}
+
+main{
+   padding: 20px;
+    background-color: rgb(244, 246, 249);
+}
+
+article{
+    border: 2px solid rgb(21, 94, 158);
+    margin: 50px;
+    padding: 25px
+}
+aside{
+   text-align: right; 
+   background-color: rgb(21, 94, 158);
+   padding: 5px;
+}
+
+
+
+
+h1{
+    font-family: 'Courier New', Courier, monospace
+}
+h2, h3{
+    font-size: 24px;
+    margin:0;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration:solid
+}
+
+.custom-1{
+    font-style:italic;
+    font-weight: bold;
+}
+.custom-2{
+    color:red;
+    text-align: justify;
+    text-indent:50px;
+}
+.custom-3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 26px;
+    word-spacing: 10px;
+    font-variant: small-caps;
+}
+
+
+section.adjacent > ul > li:nth-child(2) + li {
+    background-color: yellow;
+}
+
+section.general > ul > li:nth-child(1) ~ li {
+    background-color: red;
+}
+
+
+section.even > ul > li:nth-of-type(even)  {
+    background-color: pink
+}
