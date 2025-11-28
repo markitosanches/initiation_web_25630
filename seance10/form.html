@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input:not([type="checkbox"], [type="radio"]), select, textarea{
+            display:block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+        <label for="courriel">Courriel</label>
+        <input type="email" id="courriel" name="courriel">
+        <label for="naissance">Naissance</label>
+        <input type="date" id="naissance" name="nassaince">
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="password">
+        <label for="age">Age</label>
+        <input type="number" id="age" min="0" max="99" name="age">
+        <label for="quantite">Quantité</label>
+        <input type="number" id="quantite" step="0.01" name="quantite">
+        
+        <fieldset>
+            <legend>Programmation</legend>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="html">
+            <label>CSS
+                <input type="checkbox" name="css">
+            </label>
+            <label>PHP
+                <input type="checkbox" name="php">
+            </label>
+        </fieldset>
+
+       <fieldset>
+            <legend>Il fait froid?</legend>
+            <label>Oui
+                <input type="radio" name="froid">
+            </label>
+            <label>Non
+                <input type="radio" name="froid">
+            </label>
+            <label>je ne sais pas
+                <input type="radio" name="froid">
+            </label>
+        </fieldset>
+        <label for="ville">Villes</label>
+        <select name="ville" id="ville">
+            <option value="1">Montréal</option>
+            <option value="2">Laval</option>
+            <option value="3">Quebec</option>
+            <option value="4">Ottawa</option>
+        </select>
+        <label for="commentaite">Commentaire</label>
+        <textarea name="commentaire" id="commentaite" rows="10" cols="60"></textarea>
+
+        <!-- <button type="submit">Save</button> -->
+       <input type="submit" value="Save">
+    </form>
+
+     
+</body>
+</html>
+
+<!-- http://127.0.0.1:5500/seance10/form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&ville=1&commentaire= -->
+
+<!-- http://127.0.0.1:5500/seance10/form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&html=on&froid=on&ville=1&commentaire= -->
+
+<!-- nom=Peter&courriel=peter%40gmai.com&nassaince=2025-10-10&password=123456&age=10&quantite=0.1&html=on&css=on&froid=on&ville=3&commentaire=des+commentao%3Dires.... -->
