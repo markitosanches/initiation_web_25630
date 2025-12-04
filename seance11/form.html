@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="form.html" method="get">
+        <label for="nom" >Nom</label>
+        <input type="text" id="nom" name="nom" aria-label="Champ pour saisir un nom" value="Peter">
+        <label for="courriel">Courriel</label>
+        <input type="email" id="courriel" name="courriel" placeholder="Écrire votre courriel">
+        <label for="naissance">Naissance</label>
+        <input type="date" id="naissance" name="nassaince">
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="password" maxlength="10" minlength="6">
+        <label for="age">Age</label>
+        <input type="number" id="age" min="0" max="99" name="age" required>
+        <label for="quantite">Quantité</label>
+        <input type="number" id="quantite" step="0.01" name="quantite">
+        <label for="salaire">Salaire</label>
+        <input type="range" id="salaire"  name="salaire" min="18" max="30">
+        <input type="file">
+        <fieldset>
+            <legend>Programmation</legend>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="html" value="1" checked>
+            <label>CSS
+                <input type="checkbox" name="css" value="1">
+            </label>
+            <label>PHP
+                <input type="checkbox" name="php" value="1">
+            </label>
+        </fieldset>
+
+       <fieldset>
+            <legend>Il fait froid?</legend>
+            <label>Oui
+                <input type="radio" name="froid" value="1" checked>
+            </label>
+            <label>Non
+                <input type="radio" name="froid" value="0">
+            </label>
+            <label>je ne sais pas
+                <input type="radio" name="froid" value="2">
+            </label>
+        </fieldset>
+        <label for="ville">Villes</label>
+        <select name="ville" id="ville">
+            <option value="">Selectionner votre ville</option>
+            <option value="1">Montréal</option>
+            <option value="2">Laval</option>
+            <option value="3" selected>Quebec</option>
+            <option value="4">Ottawa</option>
+        </select>
+        <label for="commentaite">Commentaire</label>
+        <textarea name="commentaire" id="commentaite" rows="10" cols="60">Mes commentaires....</textarea>
+
+        <!-- <button type="submit">Save</button> -->
+       <input type="submit" value="Save">
+    </form>
+
+     
+</body>
+</html>
+
+<!-- http://127.0.0.1:5500/seance10/form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&ville=1&commentaire= -->
+
+<!-- http://127.0.0.1:5500/seance10/form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&html=on&froid=on&ville=1&commentaire= -->
+
+<!-- nom=Peter&courriel=peter%40gmai.com&nassaince=2025-10-10&password=123456&age=10&quantite=0.1&html=on&css=on&froid=on&ville=3&commentaire=des+commentao%3Dires.... -->
+
+<!-- form.html?nom=Peter&courriel=peter%40gmai.com&nassaince=&password=&age=&quantite=&ville=1&commentaire= -->
+
+<!-- form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&html=on&css=on&php=on&ville=1&commentaire= -->
+
+<!-- form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&froid=on&ville=1&commentaire= -->
+
+<!-- form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&froid=on&ville=1&commentaire= -->
+
+<!-- form.html?nom=&courriel=&nassaince=&password=&age=&quantite=&html=1&php=1&froid=2&ville=1&commentaire= -->
