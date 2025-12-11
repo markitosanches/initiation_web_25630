@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        main{
+            height:2000px;
+            border: 1px solid;
+            padding: 50px;
+            position: relative
+        }
+        section > div{
+            width: 100px;
+            height: 100px;
+            background-color: #cccc;
+            text-align: center;
+            display: inline-block;
+        }
+        #static .box-2{
+            background-color: red;
+            position: static;
+            /* top:400px;
+            left: 400px; */
+        }
+        #relative .box-2{
+            background-color: blue;
+            position: relative;
+            top:200px;
+            left: 200px;
+        }
+        #absolute .box-2{
+            background-color: green;
+            position: absolute;
+            top:400px;
+            left: 400px;
+            z-index:1
+        }
+        #fixed .box-2{
+            background-color: pink;
+            position: fixed;
+            top:200px;
+            left: 200px;
+            
+        }
+        nav#sticky{
+            background-color: blueviolet;
+            position: sticky;
+            top:0;
+            z-index: 2
+        }
+        footer{
+            position: fixed;
+            bottom:0
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Position</h1>
+    </header>
+    <nav id="sticky">
+        <h2>Sticky</h2>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Strategies</h2>
+            <section id="static">
+                <h3>Static</h3>
+                <div>1</div>
+                <div class="box-2">2</div>
+                <div>3</div>
+                <div>4</div>
+            </section>
+            <section id="relative">
+                <h3>Relative</h3>
+                <div>1</div>
+                <div class="box-2">Relative</div>
+                <div>3</div>
+                <div>4</div>
+            </section>
+            <section id="absolute">
+                <h3>Absolute</h3>
+                <div>1</div>
+                <div class="box-2">Absolute</div>
+                <div>3</div>
+                <div>4</div>
+            </section>
+            <section id="fixed">
+                <h3>Fixed</h3>
+                <div>1</div>
+                <div class="box-2">Fixed</div>
+                <div>3</div>
+                <div>4</div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        Copyright
+    </footer>
+    
+</body>
+</html>

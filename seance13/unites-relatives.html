@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unités Realtives</title>
+    <style>
+        main{
+            height: 2000px;
+        }
+        /* html{
+            font-size: 24px
+        } */
+         :root{
+            font-size:24px;
+         }
+        body{
+            font-size: 16px;
+        }
+        .box{
+            background-color: antiquewhite;
+            font-size:10px;
+            padding: 2em
+        }
+        .em{
+            font-size: 1.5em
+        }
+
+        .box-rem{
+            background-color: antiquewhite;
+            font-size:36px;
+            padding: 1rem
+        }
+        .rem{
+            font-size: 1.5rem
+        }
+        .box-pourcentahe{
+            width: 50%;
+            background-color: red;
+        }
+        .box-2{
+            margin-top: 10px;
+            width: 800px;
+            border: 1px solid
+        }
+        .box-vw{
+            width: 50vw;
+            background-color: blue;
+        }
+        .text-vw{
+            font-size: 2vw;
+        }
+        .text-vh{
+            font-size: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unités</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Relative</h2>
+            <section>
+                <h3>em</h3>
+                <div class="box">em</div>
+                <ul>
+                    <li>Item 1 (size: 16px)</li>
+                    <li>Item 2 (size: 16px)</li>
+                    <li class="em">Item 3 (size: 16px * 1.5 = 24px)
+                        <ul>
+                            <li>Item 3.1 (size: 24px)</li>
+                            <li>Item 3.2 (size: 24px)</li>
+                            <li class="em">Item 3.3 (size: 24px * 1.5 = 36px)
+                                <ul>
+                                    <li>Item 3.3.1</li>
+                                    <li class="em">Item 3.3.2 (36px * 1.5 = 54px)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Rem (root - recine)</h3>
+                <div class="box-rem">rem</div>
+                <ul>
+                    <li>Item 1 </li>
+                    <li>Item 2 </li>
+                    <li class="rem">Item 3 
+                        <ul>
+                            <li>Item 3.1 </li>
+                            <li>Item 3.2 </li>
+                            <li class="rem">Item 3.3 
+                                <ul>
+                                    <li>Item 3.3.1</li>
+                                    <li class="rem">Item 3.3.2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Pourcentage %</h3>
+                <div class="box-pourcentahe">50% box</div>
+                <div class="box-2">
+                    <div class="box-pourcentahe">50% box</div>
+                </div>
+            </section>
+            <section>
+                <h3>Viewport Width</h3>
+                <div class="box-vw"> 50% box Viewport Width</div>
+                <div class="box-2">
+                    <div class="box-vw">50% box Viewport Width</div>
+                </div>
+                <div class="text-vw">
+                    Font Size avec VW
+                </div>
+            </section>
+            <section>
+                 <h3>Viewport Height</h3>
+                 <div class="text-vh">
+                    Font Size avec VH
+                </div>
+            </section>
+        </article>
+    </main>
+    
+</body>
+</html>
