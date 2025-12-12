@@ -1,0 +1,23 @@
+body{
+    background-color: #ecf5f9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 0px;
+}
+nav{
+    text-align: center;
+}
+nav > a{
+    background: #064e9a;
+    color: #ecf5f9;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav > a:hover{
+    background-color: white;
+    color:  #064e9a;
+    padding: 20px 20px;
+    transition-duration: 0.4s;
+}
