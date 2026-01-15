@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p{
+            background: red !important;
+            font-family: 'Courier New', Courier, monospace;
+            color: white
+        }
+        .myclass{
+            background: blue !important;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #myid{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraphe</p>
+    <p class="myclass">Paragraphe</p>
+    <p class="myclass" id="myid">Paragraphe</p>
+    <p class="myclass" id="myid" style="background-color: bisque;">Paragraphe</p>
+</body>
+</html>
+
+element -> class -> id -> inline style -> !important

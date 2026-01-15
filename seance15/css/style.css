@@ -1,0 +1,11 @@
+@import url("style2.css");
+
+@font-face {
+    font-family: "League Script";
+    src: url("../fonts/LeagueScript-Regular.ttf");
+}
+
+p{
+    color: rgb(38, 147, 100);
+    font-family: "League Script", cursive;
+}
