@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+        }
+        nav{
+            display: flex;
+            background-color: lightblue;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        nav > div{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        nav a {
+            text-decoration:none;
+            padding: 1em;
+        }
+        nav a:hover {
+            background-color: white;
+        }
+        @media screen and (max-width:600px){
+           nav, nav >div{
+            flex-flow: column;
+            text-align: center;
+           }
+        }
+    </style>
+</head>
+<body>
+    <nav role="menu">
+        <div>
+            <a href="#" role="menuitem">Home</a>
+            <a href="#" role="menuitem">About</a>
+            <a href="#" role="menuitem">Services</a>
+            <a href="#" role="menuitem">Portfolio</a>
+            <a href="#" role="menuitem">Portfolio2</a>
+            <a href="#" role="menuitem">Portfolio3</a>
+            
+        </div>
+        <a href="#" role="menuitem">Contact</a>
+    </nav>
+</body>
+</html>

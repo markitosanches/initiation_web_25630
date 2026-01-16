@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Enfant</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            flex-flow:row;      
+        }
+
+        .flex-container > div{
+           color: white;
+           padding: 1em; 
+        }
+        .red{
+            background: red;
+            /* order: 1; */
+            /* flex-basis: 200px; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            /* flex-grow: 2; */
+            flex: 0 1 200px ;
+            
+        }
+        .green{
+            background: green;
+        }
+        .blue{
+            background: blue;
+            /* flex-grow: 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="red">1</div>
+        <div class="green">2 jaja ajjasayerdtlyiut; aj ahja aja aja aja ja lkjfd;l lrmh;</div>
+        <div class="blue">3</div>
+    </div>
+</body>
+</html>

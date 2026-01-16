@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-parent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap:3px;
+        }
+    .flex-item {
+        display: flex;
+            padding: 10px;
+            background-color: lightblue;  
+        }
+        .flex-subitem{
+            padding: 5px;
+            background-color: lightgreen;
+        }
+
+        .order-1{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-parent">
+        <span class="flex-item order-1">Item 1</span>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item order-2">Item 5</div>
+        <div class="flex-item">Item 6</div>
+        <div class="flex-item">Item 7
+            <div class="flex-subitem order-1">Item 7.1</div>
+            <div class="flex-subitem">Item 7.2</div>  
+            <div class="flex-subitem">Item 7.3</div>  
+        </div>
+        <div class="flex-item">Item 8</div>
+        <div class="flex-item">Item 9</div>
+        <div class="flex-item">Item 10</div>
+    </div>
+</body>
+</html>
