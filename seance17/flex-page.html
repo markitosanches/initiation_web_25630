@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Page</title>
+   <style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+    }
+    .contanier{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    main{
+        flex: 1
+    }
+    header, footer{
+        background-color: lightblue;
+        color: white;
+        padding: 1em;
+    }
+    footer{
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    nav ul li{
+        padding: 1em;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+    }
+     main > section{
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1em;
+        flex: 0 0 400px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+        text-align: center;
+     }
+
+     main > section.card-2{
+        flex: 2;
+        order: 1;
+     }
+     @media screen and (max-width: 600px) {
+        nav, nav ul, main {
+            flex-flow: column nowrap
+        }
+    }
+   </style>
+</head>
+<body>
+    <div class="contanier">
+        <header>
+            <nav>
+                <span><img src="https://placehold.co/150x40" alt="Image placehold"></span>
+                <ul role="menu">
+                    <li><a href="#" role="menuitem">Home</a></li>
+                    <li><a href="#" role="menuitem">About</a></li>
+                    <li><a href="#" role="menuitem">Services</a></li>
+                    <li><a href="#" role="menuitem">Contact</a></li>   
+        
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h3>Card 1</h3>
+                <div>
+                    <img src="https://placehold.co/350x150" alt="Card 1">
+                </div>
+                <p>It is a placeholder image for Card 1.</p>
+            </section>
+             <section class="card-2">
+                <h3>Card 2</h3>
+                <div>
+                    <img src="https://placehold.co/350x150" alt="Card 2">
+                </div>
+                <p>It is a placeholder image for Card 2.</p>
+            </section>
+             <section>
+                <h3>Card 3</h3>
+                <div>
+                    <img src="https://placehold.co/350x150" alt="Card 3">
+                </div>
+                <p>It is a placeholder image for Card 3.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Flex Page. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

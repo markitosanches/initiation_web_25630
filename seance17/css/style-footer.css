@@ -1,0 +1,17 @@
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        main{
+            padding: 1em;
+            flex: 1
+        }

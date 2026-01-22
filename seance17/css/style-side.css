@@ -1,0 +1,45 @@
+        body{
+            margin:0;
+        }
+        .container{
+            display: flex;
+            flex-flow: row;
+            min-height: 100vh;
+        }
+        nav{
+            background-color: lightblue;
+            padding: 2em;
+            flex: 0 0 200px;
+            display: flex;
+            flex-flow: column;
+        }
+        main{
+           
+            flex: 3;
+            padding: 2em;
+        }
+        aside{
+            background-color: lightgray;
+            padding: 2em;
+            flex: 1;
+        }
+        @media screen and (max-width: 768px){
+           main{
+            flex:1
+           }
+           aside{
+            display: none;
+           }
+        }
+        @media screen and (max-width: 600px){
+           .container{
+            flex-flow: column;
+           }
+           main{
+            order:1
+           }
+          aside{
+            display: block;
+           }
+         
+        } 
