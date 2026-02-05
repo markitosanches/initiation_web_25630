@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Correction Picture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Examen CSS - Correction</h1>
+    </header>
+    <nav>
+        <ul role="menu">
+            <li  role="menuitem" aria-label="Accueil"><a href="index.html">Accueil</a></li>
+            <li  role="menuitem" aria-label="Accueil"><a href="picture.html" class="active">Pictures</a></li>
+            <li  role="menuitem" aria-label="Accueil"><a href="#">Page 3</a></li>
+            <li  role="menuitem" aria-label="Accueil"><a href="#">Page 4</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>Aside</h2>
+        </aside>
+        <section class="center">
+            <h2>Picture</h2>
+            <picture>
+                <source media="(max-width:600px)" srcset="img/montreal-ptt.jpg">
+                <source media="(max-width:800px)" srcset="img/montreal-m.jpg">
+                <img src="img/montreal.jpg" alt="Montreal">
+            </picture>
+            <!-- 
+            <img src="img/montreal.jpg" alt="Montreal" class="picture-l">
+            <img src="img/montreal-m.jpg" alt="Montreal" class="picture-m">
+            <img src="img/montreal-ptt.jpg" alt="Montreal" class="picture-s"> -->
+            
+        </section>
+    </main>
+    <footer>
+        Examen CSS
+    </footer>
+</body>
+</html>
