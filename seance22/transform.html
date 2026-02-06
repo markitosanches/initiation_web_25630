@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 80px;
+        }
+        div{
+            width: 120px;
+            height: 120px;
+            background-color: lightblue;
+            border: 4px solid rgb(10, 176, 232);;
+            border-radius: 5px;
+        }
+        .scale-in:hover{
+            transform: scale(0.5);
+            transition-duration: 1s;
+        }
+        .scale-out:hover{
+            transform: scale(2);
+            transition-duration: 1s;
+            transform-origin: top left;
+        }
+        .rotation:hover{
+            /* transform: rotate(0.2turn); */
+            /* transform: rotate(90deg); */
+            /* transform: rotateZ(90deg); */
+            transform: rotateX(75deg);
+            transform: rotateY(75deg);
+            transform: rotate(360deg);
+            transition-duration: 3s;
+            border-radius: 70px;
+            background-color: pink;
+        }
+
+        .skew:hover{
+            /* transform: skew(45deg, 30deg); */
+            transform: skewX(45deg);
+             transform: skewY(45deg);
+        }
+        .translate:hover{
+            /* transform: translate(200px, -100px); */
+            /* transform: translateX(200px); */
+            /* transform: translateY(200px); */
+            transform: translateX(200px) scale(0.5) rotate(360deg);
+            transition-duration: 3s;
+            background-color: pink;
+            border-radius: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Scale in</h2>
+    <div class="scale-in"></div>
+
+    <h2>Scale out</h2>
+    <div class="scale-out"></div>
+
+    <h2>Rotation</h2>
+    <div class="rotation"></div>
+
+    <h2>Skew</h2>
+    <div class="skew"></div>
+
+    <h2>Translate</h2>
+    <div class="translate"></div>
+</body>
+</html>

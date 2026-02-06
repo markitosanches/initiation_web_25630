@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            margin: 0;
+            background-color: lightslategrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: steelblue;
+            color: white;
+            padding: 0.5em;
+        }
+
+        nav>ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        nav>ul>li>a {
+            color: inherit;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0.5em;
+        }
+
+        /*nav > label*/
+        .menu-button-container {
+            cursor: pointer;
+            display: none;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        @media screen and (max-width: 720px) {
+
+            nav>div {
+                order: 1;
+            }
+
+            /*nav > label*/
+            .menu-button-container {
+                display: flex;
+            }
+
+            nav>ul {
+                flex-flow: column;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                margin-top: 50px;
+            } display:none;
+
+            nav>ul>li {
+                background: steelblue;
+                display: flex;
+                justify-content: center;
+            }
+
+            #menu-toggle ~ ul li {
+                height: 0;
+                padding: 0;
+                margin: 0;
+               
+            }
+
+            #menu-toggle:checked~ul li {
+                height: 2.5em;
+                padding: 0.5em;
+                display:flex;
+            }
+
+            nav>ul>li:hover {
+                background: white;
+                color: steelblue;
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav aria-label="Main Navigation">
+        <div>
+            <img src="https://placehold.co/100X30" alt="image menu">
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button-container">
+            <span>&#x2630;</span>
+        </label>
+        <ul role="menu">
+            <li role="menuitem" aria-label="Menu Home">
+                <a href="#home">Home</a>
+            </li>
+            <li role="menuitem" aria-label="Menu About">
+                <a href="#about">About</a>
+            </li>
+            <li role="menuitem" aria-label="Menu Services">
+                <a href="#services">Services</a>
+            </li>
+            <li role="menuitem" aria-label="Menu Contact">
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+    <main>
+        <h1>Page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa dolore dolorem eius eligendi laudantium
+            nobis odio, praesentium quibusdam quisquam ratione reiciendis, totam veritatis! Eveniet necessitatibus
+            numquam quibusdam tempore temporibus.</p>
+    </main>
+</body>
+
+</html>
